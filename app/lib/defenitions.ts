@@ -27,38 +27,15 @@ export const LoginFormSchema = z.object({
     .trim(),
 })
 
-export type FormState =
-  | {
-      errors?: {
-        name?: string[]
-        email?: string[]
-        password?: string[]
-      }
-      message?: string
-    }
-  | undefined
 
-export const CreateChatSchema = z.object({
-  chatname: z
-    .string()
-    .min(2, { message: 'name should consist of at least 2 characters' })
-    .max(20, { message: 'name must be max 20 characters long.' })
-    .trim(),
-})
-
-export type roleEntry = {
-  role_id: number
-  name: string
-  description: string
-}
-
-export const InviteFormSchema = z.object({
-  username: z
-    .string()
-    .min(2, { message: 'Name must be at least 2 characters long.' })
-    .max(20, { message: 'Name must be max 20 characters long.' }),
-  role: z
-    .number()
-    .min(1)
-    .max(3)
-})
+// Example
+// export type FormState =
+//   | {
+//       errors?: {
+//         name?: string[]
+//         email?: string[]
+//         password?: string[]
+//       }
+//       message?: string
+//     }
+//   | undefined

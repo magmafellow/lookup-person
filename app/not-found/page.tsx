@@ -1,7 +1,3 @@
-export default function NotFound(){
-  return (
-    <div>
-      Not Found Page (Base)
-    </div>
-  )
+export default function NotFound() {
+  return <div>Not Found Page (Base)</div>
 }
